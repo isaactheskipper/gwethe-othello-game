@@ -19,57 +19,63 @@
                 <i>Are you looking for an exciting 2-player game that’s super simple to learn but takes years to master? Othello, also known as Reversi, is the perfect game that has complex strategies but is still suitable for all ages. Whether you’re playing the game for the first time or just need to brush up on the rules, we’ve got you covered. Keep reading, and we’ll teach you everything about Othello so you’re ready to crush your opponent on your next game night!</i>
             </p>
         </div>
-        <div>
-            <h2>Things You Should Know</h2>
+        
+        <h2>Things You Should Know</h2>
+        <div class="know-othello">
             <ul>
                 <li>Number of Players: 2</li>
-                <img src="players.jpeg">
+                <img src="players.jpeg" style="margin-top: 30px;">
                 <li>Materials Needed: 8 x 8 square Othello board, 64 double-sided disks (black on one side, white on the other)</li>
-                <li><img src="boardsetup.jpg" alt="Othello board setup"></li>
+                <img src="boardsetup.jpg" alt="Othello board setup" style="margin-top: 30px;">
                 <li>Objective: Have the most disks of your color on the board at the end of the game</li>
-                <img src="winning.jpeg">
+                <img src="winning.jpeg" style="margin-top: 30px;">
             </ul>
         </div>
+
+        <h3><b><u>How to Play Othello</u></b></h3>
         <div>
-            <h3><u>How to Play Othello</u></h3>
-            <div class="step">
-                <p class="step-paragraph"><strong>Step 1: Setup</strong></p>
-                <p class="step-paragraph">
-                    <span class="step-number">1</span>
-                    Set out the Othello board and give each player 30 disks. Set the square 8 x 8 board in between the players. Decide who wants to play as black and who wants to play as white. Then, give each person 30 disks, which are black on one side and white on the other. Flip all of your disks so the color you chose is face-up.
-                </p>
-                <div id="board1" class="game-board"></div> 
-            </div>
-            <div class="step">
-                <p class="step-paragraph"><strong>Step 2: Game Rules</strong></p>
-                <p class="step-paragraph">
-                    <span class="step-number">2</span>
-                    Players take turns placing their disks on the board. Each disk must flank an opponent's disk either vertically, horizontally, or diagonally. Flanked disks are flipped to the player's color. The game ends when neither player can make a move, and the player with the most disks on the board wins.
-                </p>
-                <div id="board2" class="game-board"></div> 
-            </div>
+        <div class="step">
+            <p class="step-paragraph"><strong>Step 1: Setup</strong></p></div>
+            <p class="step-paragraph">
+                <span class="step-number">1</span>
+                Othello is a strategy board game for two players (Black and White), played on an 8 by 8 board. The game traditionally begins with four discs placed in the middle of the board as shown below.
+            </p>
+            <div id="board1" class="game-board"></div>
+        </div>
 
-            <div class="step">
-              <p class="step-paragraph"><strong>Step 3: Game Rules</strong></p>
-              <p class="step-paragraph">
-                  <span class="step-number">3</span>
-                  Players take turns placing their disks on the board. Each disk must flank an opponent's disk either vertically, horizontally, or diagonally. Flanked disks are flipped to the player's color. The game ends when neither player can make a move, and the player with the most disks on the board wins.
-              </p>
-              <div id="board3" class="game-board"></div> 
-          </div>
+        <div>
+        <div class="step">
+            <p class="step-paragraph"><strong>Step 2: Game Rules</strong></p></div>
+            <p class="step-paragraph">
+                <span class="step-number">2</span>
+                Players take turns placing their disks on the board. Each disk must flank an opponent's disk either vertically, horizontally, or diagonally. Flanked disks are flipped to the player's color. The game ends when neither player can make a move, and the player with the most disks on the board wins.
+                Black must place a black disc on the board, in such a way that there is at least one straight (horizontal, vertical, or diagonal) occupied line between the new disc and another black disc, with one or more contiguous white pieces between them. 
+                In the starting position, Black has the following 4 options indicated by translucent discs:
+            </p>
+            <div id="board2" class="game-board"></div>
+        </div>
 
-          <div class="step">
-            <p class="step-paragraph"><strong>Step 4: Game Rules</strong></p>
+        <div>
+        <div class="step">
+            <p class="step-paragraph"><strong>Step 3: Game Rules</strong></p></div>
+            <p class="step-paragraph">
+                <span class="step-number">3</span>
+                Players take turns placing their disks on the board. Each disk must flank an opponent's disk either vertically, horizontally, or diagonally. Flanked disks are flipped to the player's color. The game ends when neither player can make a move, and the player with the most disks on the board wins.
+            </p>
+            <div id="board3" class="game-board"></div>
+        </div>
+
+        <div>
+        <div class="step">
+            <p class="step-paragraph"><strong>Step 4: Game Rules</strong></p></div>
             <p class="step-paragraph">
                 <span class="step-number">4</span>
                 Players take turns placing their disks on the board. Each disk must flank an opponent's disk either vertically, horizontally, or diagonally. Flanked disks are flipped to the player's color. The game ends when neither player can make a move, and the player with the most disks on the board wins.
             </p>
-            <div id="board4" class="game-board"></div> 
-         </div>
-
-            
+            <div id="board4" class="game-board"></div>
         </div>
     </div>
+    
     <script src="othello.js"></script>
 </body>
 </html>

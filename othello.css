@@ -37,6 +37,9 @@ body {
     margin: 20px; 
     font-weight: bold;
 }
+.know-othello{
+    font-size: 20px;
+}
 
 .step {
     display: flex;
@@ -44,10 +47,11 @@ body {
     justify-content: center;
     align-items: center;
     margin: 10px 0;
+    background-color: aqua;
 }
 
 .step-paragraph {
-    background-color: rgb(132, 216, 125); 
+   font-size: 30px;
     padding: 10px; 
     border-radius: 5px; 
     color: black; 

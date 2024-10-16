@@ -1,0 +1,55 @@
+body{
+    background: linear-gradient(135deg, #8dd9ec, #acbae0b9);
+    align-content: center;
+}
+.nav-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial;
+    font-size: 30px;
+    background-color: rgb(132, 216, 125);
+    padding: 30px;
+    
+    
+}
+.general{
+    
+}
+.othello-img{
+    justify-content: center;
+    align-items: center;
+    padding-left: 400px;
+}
+.welcome{
+    font-size: 30px;
+    margin-left: 30px;
+    font-weight: bold;
+    
+}
+.step-1{
+    display: table;
+}
+.step1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial;
+    font-size: 20px;
+    background-color: rgb(132, 216, 125);
+    padding: 0px;
+    position: absolute;
+    color: white;
+}
+.setup{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial;
+    font-size: 20px;
+    background-color: white;
+    color: black;
+    margin-right: 1500px;
+    margin-left: 60px;
+    padding-left: 20px;
+}

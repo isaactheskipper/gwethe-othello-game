@@ -4,87 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="othello.css">
-    <title>Document</title>
+    <title>Othello Game</title>
 </head>
 <body>
     <div class="nav-bar">OTHELLO</div>
     <div class="general">
-    <div class="welcome">Welcome to Othello.</div>
-    <div class="w3-panel w3-leftbar w3-sand">
-       <div class="othello-img">
-        <img src="othello.jpg">
-       </div>
-        <p><b><i>"About Othello"</i></b></p>
-        <p class="w3-xxlarge w3-serif"><i>Are you looking for an exciting 2-player game that’s 
-         super simple to learn but takes years to master? Othello, also known as Reversi, is the 
-         perfect game that has complex strategies but is still suitable for all ages. Whether you’re 
-         playing the game for the first time or just need to brush up on the rules, we’ve got you covered. 
-         Keep reading, and we’ll teach you everything about Othello so you’re ready to crush your opponent 
-         on your next game night!</i></p>
-      </div>
-      <div>
-        <h2>Things you should know</h2>
-        <p>
+        <div class="welcome">Welcome to Othello.</div>
+        <div class="w3-panel w3-leftbar w3-sand">
+            <div class="othello-img">
+                <img src="othello.jpg" alt="Othello game image">
+            </div>
+            <p><b><i>"About Othello"</i></b></p>
+            <p class="w3-xxlarge w3-serif">
+                <i>Are you looking for an exciting 2-player game that’s super simple to learn but takes years to master? Othello, also known as Reversi, is the perfect game that has complex strategies but is still suitable for all ages. Whether you’re playing the game for the first time or just need to brush up on the rules, we’ve got you covered. Keep reading, and we’ll teach you everything about Othello so you’re ready to crush your opponent on your next game night!</i>
+            </p>
+        </div>
+        <div>
+            <h2>Things You Should Know</h2>
             <ul>
                 <li>Number of Players: 2</li>
                 <li>Materials Needed: 8 x 8 square Othello board, 64 double-sided disks (black on one side, white on the other)</li>
-                <img src="boardsetup.jpg">
+                <li><img src="boardsetup.jpg" alt="Othello board setup"></li>
                 <li>Objective: Have the most disks of your color on the board at the end of the game</li>
             </ul>
-        </p>
-      </div>
-      <div>
-        <h3><u>How to play Othello</u></h3>
-      </div>
-      <span>
-      <div class="step1">
-        <p>Step 1</p>
-      </div>
-       <div class="setup">
-      <p>Setup</p>
-    </div>
-</span>
+        </div>
+        <div>
+            <h3><u>How to Play Othello</u></h3>
+            <div class="step">
+                <p class="step-paragraph"><strong>Step 1: Setup</strong></p>
+                <p class="step-paragraph">
+                    <span class="step-number">1</span>
+                    Set out the Othello board and give each player 30 disks. Set the square 8 x 8 board in between the players. Decide who wants to play as black and who wants to play as white. Then, give each person 30 disks, which are black on one side and white on the other. Flip all of your disks so the color you chose is face-up.
+                </p>
+                <div id="board1" class="game-board"></div> 
+            </div>
+            <div class="step">
+                <p class="step-paragraph"><strong>Step 2: Game Rules</strong></p>
+                <p class="step-paragraph">
+                    <span class="step-number">2</span>
+                    Players take turns placing their disks on the board. Each disk must flank an opponent's disk either vertically, horizontally, or diagonally. Flanked disks are flipped to the player's color. The game ends when neither player can make a move, and the player with the most disks on the board wins.
+                </p>
+                <div id="board2" class="game-board"></div> 
+            </div>
 
-    <div>
-<div>
+            <div class="step">
+              <p class="step-paragraph"><strong>Step 3: Game Rules</strong></p>
+              <p class="step-paragraph">
+                  <span class="step-number">3</span>
+                  Players take turns placing their disks on the board. Each disk must flank an opponent's disk either vertically, horizontally, or diagonally. Flanked disks are flipped to the player's color. The game ends when neither player can make a move, and the player with the most disks on the board wins.
+              </p>
+              <div id="board3" class="game-board"></div> 
+          </div>
 
-  <p>
-      
-    <span style="
-       float: left;
- width: 0.7em;
- font-size: 400%;
- font-family: algerian, courier;
- line-height: 80%;
-       ">1</span>   
-Set out the Othello board and give each player 30 disks. Set the square 8 x 8 board in between the players. Decide who wants to play 
-as black and who wants to play as white. Then, give each person 30 disks, which are black on one side and white on the other. 
-Flip all of your disks so the color you chose is face-up.
-   </p>
-   
-  <div id="board">
+          <div class="step">
+            <p class="step-paragraph"><strong>Step 4: Game Rules</strong></p>
+            <p class="step-paragraph">
+                <span class="step-number">4</span>
+                Players take turns placing their disks on the board. Each disk must flank an opponent's disk either vertically, horizontally, or diagonally. Flanked disks are flipped to the player's color. The game ends when neither player can make a move, and the player with the most disks on the board wins.
+            </p>
+            <div id="board4" class="game-board"></div> 
+         </div>
 
-  </div>  
-
-</div>
-
-      <div id="board2">
-        <p>
-          <span style="
-            float: left;
-      width: 0.7em;
-      font-size: 400%;
-      font-family: algerian, courier;
-      line-height: 80%;
-            ">2</span>   
-    Set out the Othello board and give each player 30 disks. Set the square 8 x 8 board in between the players. Decide who wants to play 
-    as black and who wants to play as white. Then, give each person 30 disks, which are black on one side and white on the other. 
-    Flip all of your disks so the color you chose is face-up.
-        </p>
-      </div>  
-  
+            
+        </div>
     </div>
     <script src="othello.js"></script>
-
 </body>
 </html>

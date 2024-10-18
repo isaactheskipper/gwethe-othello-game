@@ -81,6 +81,7 @@ function createBoard(board, whitePositions, blackPositions, greyPositions,lightG
             disc.style.opacity = '0.5'
             grid.appendChild(disc); // Add disc to the grid square
         }
+        
 
         board.appendChild(grid); // Add grid square to the board
     }

@@ -1,11 +1,12 @@
 body {
     background: linear-gradient(135deg, #3c5283, #13073fb9);
     margin: auto;
-    width: 60%;
+    width: 50%;
     border: 3px solid #73AD21;
     padding: 10px;
+    
 }
-   
+  
 
     
 
@@ -44,10 +45,10 @@ body {
 .step {
     display: flex;
     flex-direction: column; 
-    justify-content: center;
     align-items: center;
     margin: 10px 0;
     background-color: aqua;
+    margin-top: 30px;
 }
 
 .step-paragraph {

@@ -1,78 +1,173 @@
+othello.css
+/* Body background and main structure */
 body {
-    background: linear-gradient(135deg, #3c5283, #13073fb9);
-    margin: auto;
-    width: 50%;
-    border: 3px solid #73AD21;
-    padding: 10px;
-    
+    background: linear-gradient(135deg, #000000, #13073fb9); /* Body background */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
-  
 
-    
-
+/* Navigation bar styling */
 .nav-bar {
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: Arial, sans-serif; 
     font-size: 50px;
-    background-color: rgb(132, 216, 125);
-    width: 100%; 
+    padding: 20px;
+    box-shadow: 2px 4px 7px rgba(255, 255, 255, 0.2); /* Floating effect */
+    background-color: rgba(255, 255, 255, 0.7); /* Light blue background for steps */
+    border-radius: 10px;
 }
 
+/* Main content wrapper */
+.content-wrapper {
+    background-color: #bdbbbb; /* Separate background color */
+    padding: 30px;
+    border-radius: 15px;
+    width: 60%; /* Control the width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* General content styling */
 .general {
     display: flex;
-    flex-direction: column; 
-    align-items: center; 
+    flex-direction: column;
+    align-items: center;
 }
 
-.othello-img {
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    margin: 20px 0; 
-}
-
+/* Welcome text */
 .welcome {
     font-size: 30px;
-    margin: 20px; 
+    margin: 20px;
     font-weight: bold;
 }
-.know-othello{
+
+/* About Othello section */
+.know-othello {
     font-size: 20px;
 }
 
-.step {
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    margin: 10px 0;
-    background-color: aqua;
-    margin-top: 30px;
+.othello-img {
+    margin: 20px 0;
 }
 
+.instructions{
+    box-shadow: 4px 2px 5px rgba(0, 0, 0, 0.2); /* Floating effect */
+    margin: 40px 20px;
+    background-color: rgba(255, 255, 255, 0.7); /* Light blue background for steps */
+    width: 100%; /* Ensure steps take full width */
+    display: inline-block; /* Enable floating effect */
+    border-radius: 10px;
+}
+
+.about-othello{
+    box-shadow: 2px 4px 7px rgba(255, 255, 255, 0.2); /* Floating effect */
+    background-color: rgba(255, 255, 255, 0.7); /* Light blue background for steps */
+    display: inline-block; /* Enable floating effect */
+    border-radius: 10px;
+
+}
+
+/* Info list styling */
+.info-list {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 20px 0; /* Add margin for spacing */
+    display: flex; /* Flexbox for horizontal alignment */
+    flex-direction: column; /* Align items in a column */
+    align-items: center; /* Center align items */
+}
+
+/* Styling for each game step container */
+.step {
+    background-color: rgba(255, 255, 255, 0.7); /* Light blue background for steps */
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Floating effect */
+    width: 100%; /* Ensure steps take full width */
+    display: inline-block; /* Enable floating effect */
+    vertical-align: top; /* Align vertically */
+}
+
+/* Paragraph and step number styles */
 .step-paragraph {
-   font-size: 30px;
-    padding: 10px; 
-    border-radius: 5px; 
-    color: black; 
+    font-size: 25px;
+    padding: 10px;
+    color: black;
+}
+
+.play{
+    font-size: 25px;
+    padding: 10px;
+    color: black;
 }
 
 .step-number {
-    float: left; 
+    float: left;
     width: 0.7em;
-    font-size: 400%; 
-    font-family: Algerian, Courier; 
-    line-height: 80%; 
+    font-size: 400%;
+    font-family: Algerian, Courier;
+    line-height: 80%;
+    color: red;
 }
 
+/* Game board layout */
 .game-board {
-    background-color: green; 
+    background-color: green;
     display: grid;
     grid-template-columns: repeat(8, 100px);
     grid-template-rows: repeat(8, 100px);
     gap: 5px;
     width: fit-content;
     padding: 5px;
-    margin-top: 10px; 
+    margin-top: 10px;
+    position:relative;
 }
+
+a:link{
+    color : green;
+    background-color :transparent;
+    text-decoration: none;
+}   
+a:visited {
+color:red;
+background-color: transparent;
+text-decoration: none;
+}
+a:hover {
+color: violet;
+background-color: transparent;
+text-decoration: underline;
+}
+a:active {
+color: yellow;
+background-color: transparent;
+text-decoration: underline;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .content-wrapper {
+        width: 90%;
+    }
+
+    .nav-bar {
+        font-size: 30px;
+    }
+
+    .welcome,
+    .step-paragraph {
+        font-size: 20px;
+    }
+
+    .game-board {
+        grid-template-columns: repeat(8, 50px);
+        grid-template-rows: repeat(8, 50px);
+    }
+}
+
